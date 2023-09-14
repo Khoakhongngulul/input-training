@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="input-traninig.js"></script>
+</head>
+<body>
+    <h1> Kỹ năng xử lý tag input - phần tử text cho phép nhập vào giá trị </h1>
+    <p style="font-style: italic; color: red;">(Trước khi ấn các nút hãy nhập giá trị cho các ô text)</p>
+    
+    <!-- Hiển thị input text html căn bản - subtask 1 -->
+    <input id="input-firstname" type="text">
+    <!-- Hiển thị input text html cơ bản, có placeholder - subtask 2 -->
+    <input id="input-lastname" placeholder="Nhập vào giá trị lastname ..." type="text">
+    <!-- Hiển thị input ô text chỉ cho phép nhập vào số - subtask 3 -->
+    <input id="input-nam-sinh" placeholder="Nhập vào năm sinh ..." type="number">
+    <hr>
+    <!-- các nút để truy vấn, truy vấn phần tử, đọc giá trị, gán giá trị  -->
+    <button onclick="onBtnTruyVanPhanTuInputClick()"> truy vấn phần tử input</button>
+    <button onclick="onBtnDocGiaTriInputClick()"> Đọc giá trị input text </button>
+    <button onclick="onBtnDocGiaTriCutSpaceClick()"> Đọc giá trị input text có cut khoảng trắng </button>
+    <button onclick="onBtnLayGiaTriParseIntClick()"> Đọc giá trị input text và chuyển về kiểu số</button>
+    <button onclick="onBtnGanGiaTriInputClick()"> Gán giá trị input text </button>
+</body>
+</html>
